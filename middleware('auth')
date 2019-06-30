@@ -1,0 +1,45 @@
+
+   ErrorException  : file_put_contents(E:\xampp\htdocs\Wild_sheep\app/Http/Controllers/Route::get('delete/user/{id}','userController@delete')-;.php): failed to open stream: No such file or directory
+
+  at E:\xampp\htdocs\Wild_sheep\vendor\laravel\framework\src\Illuminate\Filesystem\Filesystem.php:122
+    118|      * @return int
+    119|      */
+    120|     public function put($path, $contents, $lock = false)
+    121|     {
+  > 122|         return file_put_contents($path, $contents, $lock ? LOCK_EX : 0);
+    123|     }
+    124| 
+    125|     /**
+    126|      * Write the contents of a file, replacing it atomically if it already exists.
+
+  Exception trace:
+
+  1   file_put_contents("E:\xampp\htdocs\Wild_sheep\app/Http/Controllers/Route::get('delete/user/{id}','userController@delete')-;.php", "<?php
+
+namespace App\Http\Controllers\Route::get('delete\user;
+
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
+class {id}','userController@delete')-; extends Controller
+{
+    //
+}
+")
+      E:\xampp\htdocs\Wild_sheep\vendor\laravel\framework\src\Illuminate\Filesystem\Filesystem.php:122
+
+  2   Illuminate\Filesystem\Filesystem::put("E:\xampp\htdocs\Wild_sheep\app/Http/Controllers/Route::get('delete/user/{id}','userController@delete')-;.php", "<?php
+
+namespace App\Http\Controllers\Route::get('delete\user;
+
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
+class {id}','userController@delete')-; extends Controller
+{
+    //
+}
+")
+      E:\xampp\htdocs\Wild_sheep\vendor\laravel\framework\src\Illuminate\Console\GeneratorCommand.php:73
+
+  Please use the argument -v to see more details.
